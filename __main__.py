@@ -27,7 +27,7 @@ def kmeansClustering(imgPath, nClusters=64):
     # print(df.shape)
 
     # Clustering
-    kmeans = MiniBatchKMeans(n_clusters=64, n_init=40)
+    kmeans = MiniBatchKMeans(n_clusters=nClusters, n_init=40)
     kmeans.fit(df)
 
     # Note, the centers are most likely not integers, so we'll need to approximate them
